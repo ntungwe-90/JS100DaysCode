@@ -48,6 +48,40 @@ if (age >= 16) {
     console.log("you are too young to take the test")
 }
 
+const blueBarrel = {
+      "weight" : 250,
+      "content" : "water"
+    };
+    
+    const whiteBarrel = {
+      "weight" : 100,
+     "content" : "flour"
+    };
+    
+    const brownBarrel = {
+      "weight" : 300,
+      "content" : "wiskey"
+    };
+    
+    const redBarrel = {
+      "weight" : 120,
+      "content" : "grape juice"
+    };
+    
+    console.log("Lets load this boat !" );
+    
+    const barrels = [blueBarrel, whiteBarrel, brownBarrel, redBarrel];
+    
+    for(let barrel of barrels){
+    
+      if(barrel.weight > 200) {
+        console.log("The barrel of " + barrel.content + " weighs " + barrel.weight + "kg! Store it in the middle part of the ship!");
+      }else{
+        console.log("The barrel of " + barrel.content + " weighs " + barrel.weight + "kg ! Store it at the back part of the ship!");
+      }
+    }
+    
+    console.log("The boat is load!" );
 
 // DAY THREE
 // functions
@@ -149,6 +183,7 @@ console.log(lent)
 
 //replace method
 const captain = "tall short";
+
 let results = captain.replace('c', 't');
 console.log(results)
 
@@ -159,3 +194,16 @@ let resultss = message.replace('b', 'c');
 console.log(resultss);
 
 // Output: call bat
+
+//DAY 6
+// methods in JS
+const texts = "JAVA is awesome. Java is fun"
+let pattern = "Java";
+let new_text =texts.replace(pattern, "Javascript")
+console.log(new_text)
+
+
+const programmingLanguages = "PHP is the best. Java is the easiest"
+let program = "PHP";
+let new_program = programmingLanguages.replace(program, "Python")
+console.log(new_program)
